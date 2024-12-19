@@ -28,15 +28,6 @@ const Calculator: React.FC = () => {
     }
   };
 
-  const deleteLast = () => {
-    setInput(input.slice(0, -1));
-  };
-
-
-
-  const useLastResult = () => {
-    setInput(prev=>prev+lastResult); 
-  };
   const buttons = [
     { label: "C", action: clearInput },
     { label: "DEL", action: () => setInput(input.slice(0, -1)) },
